@@ -1,9 +1,12 @@
 <template>
     <h1>{{ courseName }}</h1>
     <h3> Course by {{ mentor }}</h3>
+    <p>Give Initial Value</p>
+    <input type="number" v-model="count">
+    <br><br>
     <h2>{{ count }}</h2>
-    <button @click="count++" >+</button>
-    <button @click="count--" >-</button>
+    <button @click="count++">+</button>
+    <button @click="count--">-</button>
 </template>
 
 <!-- <script>
@@ -30,7 +33,8 @@ export default{
 <script setup>
 import { ref } from 'vue';
 
-        let count= ref(0)
-        const courseName=ref("Vue js 3");
-        const mentor=ref("Mentor");
+let count = ref(0);
+const courseName = ref("Vue js 3");
+const mentor = ref("Mentor");
+
 </script>
