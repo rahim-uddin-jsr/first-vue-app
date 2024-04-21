@@ -8,10 +8,10 @@ import SingleUser from "@/Views/SingleUser.vue";
 
 
 const routes = [
-    { path: '/', component: Home },
-    { path: '/about', component: About },
-    { path: '/contact', component: Contact },
-    { path: '/users', component: Users },
+    { path: '/', name:'home', component: Home },
+    { path: '/about-us', name:'about', component: About },
+    { path: '/contact-us', name:'contact', component: Contact },
+    { path: '/users', name:'users', component: Users },
     { path: '/users/:id', component:SingleUser },
   ]
 const router=createRouter({
